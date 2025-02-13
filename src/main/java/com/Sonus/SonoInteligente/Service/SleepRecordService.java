@@ -1,4 +1,5 @@
-package com.Sonus.SonoInteligente.Repository;
+package com.Sonus.SonoInteligente.Service;
+
 
 import com.Sonus.SonoInteligente.Model.SleepRecord;
 import com.Sonus.SonoInteligente.Repository.SleepRecordRepository;

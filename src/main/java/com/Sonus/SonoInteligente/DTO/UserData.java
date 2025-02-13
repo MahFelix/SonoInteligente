@@ -1,29 +1,16 @@
 package com.Sonus.SonoInteligente.DTO;
 
+import java.util.List;
+
 public class UserData {
-
-    private String bedtime;         // Hora de dormir (ex: "22:30")
-    private String wakeupTime;      // Hora de acordar (ex: "06:30")
-    private String difficulties;    // Dificuldades relatadas (ex: "Insônia, sonolência diurna")
-    private int sleepQuality;       // Qualidade do sono (escala de 1 a 10)
-    private int stressLevel;        // Nível de estresse (escala de 1 a 10)
-    private boolean usesMedication; // Usa medicamentos para dormir?
-    private String sleepNotes;      // Observações adicionais sobre o sono
-
-    // Construtor padrão
-    public UserData() {
-    }
-
-    // Construtor com todos os campos
-    public UserData(String bedtime, String wakeupTime, String difficulties, int sleepQuality, int stressLevel, boolean usesMedication, String sleepNotes) {
-        this.bedtime = bedtime;
-        this.wakeupTime = wakeupTime;
-        this.difficulties = difficulties;
-        this.sleepQuality = sleepQuality;
-        this.stressLevel = stressLevel;
-        this.usesMedication = usesMedication;
-        this.sleepNotes = sleepNotes;
-    }
+    private String bedtime;
+    private String wakeupTime;
+    private List<String> difficulties; // Alterado para List<String>
+    private int sleepQuality;
+    private int stressLevel;
+    private boolean usesMedication;
+    private String medicationDetails;
+    private String sleepNotes;
 
     // Getters e Setters
     public String getBedtime() {
@@ -42,11 +29,11 @@ public class UserData {
         this.wakeupTime = wakeupTime;
     }
 
-    public String getDifficulties() {
+    public List<String> getDifficulties() { // Alterado para List<String>
         return difficulties;
     }
 
-    public void setDifficulties(String difficulties) {
+    public void setDifficulties(List<String> difficulties) { // Alterado para List<String>
         this.difficulties = difficulties;
     }
 
@@ -74,24 +61,19 @@ public class UserData {
         this.usesMedication = usesMedication;
     }
 
+    public String getMedicationDetails() {
+        return medicationDetails;
+    }
+
+    public void setMedicationDetails(String medicationDetails) {
+        this.medicationDetails = medicationDetails;
+    }
+
     public String getSleepNotes() {
         return sleepNotes;
     }
 
     public void setSleepNotes(String sleepNotes) {
         this.sleepNotes = sleepNotes;
-    }
-
-    @Override
-    public String toString() {
-        return "UserData{" +
-                "bedtime='" + bedtime + '\'' +
-                ", wakeupTime='" + wakeupTime + '\'' +
-                ", difficulties='" + difficulties + '\'' +
-                ", sleepQuality=" + sleepQuality +
-                ", stressLevel=" + stressLevel +
-                ", usesMedication=" + usesMedication +
-                ", sleepNotes='" + sleepNotes + '\'' +
-                '}';
     }
 }
