@@ -1,9 +1,7 @@
 package com.Sonus.SonoInteligente.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -18,6 +16,9 @@ public class SleepPlan {
     private String bedtime;
     private String wakeupTime;
     private String difficulties;
+
+    @Column(length = 1000) // Campo problemático
+    private String descricao;
 
     // Construtor padrão (necessário para JPA)
     public SleepPlan() {
@@ -79,4 +80,6 @@ public class SleepPlan {
     public void setDifficulties(String difficulties) {
         this.difficulties = difficulties;
     }
+
+
 }

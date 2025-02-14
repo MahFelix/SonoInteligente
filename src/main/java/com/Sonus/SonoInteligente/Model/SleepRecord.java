@@ -1,6 +1,8 @@
 package com.Sonus.SonoInteligente.Model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
+
 import java.time.LocalDate;
 
 @Entity
@@ -14,6 +16,8 @@ public class SleepRecord {
     private String bedtime; // Hora de dormir
     private String wakeupTime; // Hora de acordar
     private String difficulties; // Dificuldades relatadas
+
+
 
     // Getters e Setters
     public Long getId() {
