@@ -16,6 +16,11 @@ public class SleepPlan {
     private String bedtime;
     private String wakeupTime;
     private String difficulties;
+    private int stressLevel;
+    private boolean usesMedication;
+    private String medicationDetails;
+    private String sleepNotes;
+
 
     @Column(length = 1000) // Campo problemático
     private String descricao;
@@ -80,6 +85,37 @@ public class SleepPlan {
     public void setDifficulties(String difficulties) {
         this.difficulties = difficulties;
     }
+    
 
+    public int getStressLevel() {
+        return stressLevel;
+    }
 
+    public void setStressLevel(int stressLevel) {
+        this.stressLevel = stressLevel;
+    }
+
+    public boolean isUsesMedication() {
+        return usesMedication;
+    }
+
+    public void setUsesMedication(boolean usesMedication) {
+        this.usesMedication = usesMedication;
+    }
+
+    public String getMedicationDetails() {
+        return medicationDetails;
+    }
+
+    public void setMedicationDetails(String medicationDetails) {
+        this.medicationDetails = medicationDetails;
+    }
+
+    public String getSleepNotes() {
+        return sleepNotes;
+    }
+
+    public void setSleepNotes(String sleepNotes) {
+        this.sleepNotes = sleepNotes;
+    }
 }
