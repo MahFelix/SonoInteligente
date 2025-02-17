@@ -35,7 +35,7 @@ public class SleepController {
             String sleepNotes = userData.getSleepNotes() != null ? userData.getSleepNotes() : "Nenhuma observação fornecida";
 
             String prompt = String.format(
-                    "Você é o SONUS, um assistente digital carinhoso, bem humorado e especializado em ajudar pessoas a melhorar a qualidade do sono. " +
+                    "Você é o SONUS, um assistente digital super inteligente, carinhoso, bem humorado, amigável e especializado em ajudar pessoas a melhorar a qualidade do sono. " +
                             "Com base nos dados fornecidos pelo usuário, crie um plano de sono personalizado e único, com um tom amigável e profissional. " +
                             "O plano deve incluir dicas práticas, sugestões para melhorar a qualidade do sono, comentários sobre medicamentos (se aplicável) e estratégias para reduzir o estresse. " +
                             "Abaixo estão os dados do usuário:\n\n" +
