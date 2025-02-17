@@ -45,9 +45,9 @@ public class SleepController {
                             "- Hora de acordar: %s\n" +
                             "- Dificuldades relatadas: %s\n" +
                             "- Qualidade do sono: %d/10\n" +
-                            "- Nível de estresse: %d/10\n" +
+                            "- Nível de estresse: %d/10 de 1 a 10 baseado nas horas e dificuldades\n" +
                             "- Usa medicamentos: %b\n" +
-                            "- Detalhes dos medicamentos: %s\n" +
+                            "- Detalhes dos medicamentos: %s dê uma breve explicação de cada medicamento\n" +
                             "- Observações adicionais: %s\n\n" +
 
                             "**Instruções para o SONUS:**\n" +
