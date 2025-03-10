@@ -17,7 +17,7 @@ public class SleepController {
 
     private final RestTemplate restTemplate;
     private final String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
-    private final String apiKey = "AIzaSyDEP0ECT9U7Z2MBzaGIM3VH4n35cH_Iiww"; // Substitua pela sua chave de API
+    private final String apiKey = "AIzaSyCR81GsSgLouV9P0THyiOizZa4NziuzGkw"; // Substitua pela sua chave de API
 
     @Autowired
     private SleepPlanRepository sleepPlanRepository;

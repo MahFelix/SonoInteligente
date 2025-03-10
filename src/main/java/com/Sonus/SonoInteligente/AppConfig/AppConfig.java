@@ -20,7 +20,7 @@ public class AppConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Permite CORS para todos os endpoints
-                        .allowedOrigins("https://sonus-interface.vercel.app/") // Permite solicitações do frontend na porta 5173
+                        .allowedOrigins("http://localhost:5173") // Permite solicitações do frontend na porta 5173
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos HTTP permitidos
                         .allowedHeaders("*") // Headers permitidos
                         .allowCredentials(true); // Permite cookies e autenticação
