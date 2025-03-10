@@ -16,7 +16,7 @@ import java.util.List;
 public class SleepController {
 
     private final RestTemplate restTemplate;
-    private final String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
+    private final String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
     private final String apiKey = "AIzaSyCR81GsSgLouV9P0THyiOizZa4NziuzGkw"; // Substitua pela sua chave de API
 
     @Autowired
